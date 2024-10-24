@@ -10,6 +10,10 @@ hsp = _move * walksp;
 
 vsp = vsp + grv;
 
+if (place_meeting(x,y+1,oWall)) && (key_jump)
+{
+vsp = -jumpsp	
+}
 
 if (place_meeting(x,y+vsp,oWall))
 {
